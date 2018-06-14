@@ -1,13 +1,21 @@
 import React, {Component} from 'react';
+import Header from '../header/Header.jsx';
+import Main from '../main/Main.jsx';
+import DonutsCreate from '../donuts/DonutsCreate.jsx';
+import DonutsList from '../donuts/DonutsList.jsx';
+import Footer from '../footer/Footer.jsx';
 
 class Home extends Component {
     render() {
         return (
             <main>
-                Welcome!
-                <a href={FlowRouter.url('login')}>Login</a>
-                <a href={FlowRouter.url('register')}>Register</a>
-            </main>
+                <Header />
+                <Main />
+                <DonutsCreate />
+                <DonutsList />
+                <Footer />
+                
+            </main>    
         )
     }
 }

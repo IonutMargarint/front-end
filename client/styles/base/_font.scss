@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Gadugi';
+  font-style: normal;
+  src:
+    local('Gadugi'),
+    url(../layout/fonts/gadugi.ttf) format('ttf');
+}
+
+html {
+  font-family: 'Gadugi', sans-serif;
+}

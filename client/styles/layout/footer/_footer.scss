@@ -1,0 +1,51 @@
+.footer{
+    background-color: #ffffff;
+    margin-top: 20%;
+}
+
+.footer-text{
+    width: 72%;
+    font-size: 36px;
+    font-weight: bold;
+    color: #aca8a8;
+    float: left;
+}
+
+.footer-tel{
+    font-size: 36px;
+    font-weight: bold;
+    color: #f3c620;
+    float: right;
+}
+
+.footer-email-sub{
+    width: 400px;
+    height: 65px;
+    background-color: #f06eaa;
+    border-radius: 10px;
+    float: right;
+    line-height: 40px;
+p {
+      color: #ffffff;  
+      font-size: 14px;
+    }
+}
+
+.email-text{
+    float: left;
+    margin-left: 20px;
+}
+
+.subscribe-text{
+    float: right;
+    margin: 0px 0px;
+    background-color: #fbaf5d;
+    border-radius: 10px;
+    border: 13px solid #fbaf5d;
+    
+}
+
+.footer-logo{
+    text-align: center;
+    padding: 360px 200px;
+}

@@ -1,0 +1,181 @@
+.add-donut-bg{
+    background: $content-bg;
+    overflow: hidden;
+    padding: 150px 0px;
+   
+   
+    
+    .form{
+        background: #440e62;
+        padding: 30px;
+        border-radius: 20px;
+        height: 800px;
+        z-index: 1;
+        
+    }
+    
+}
+
+.add-donut-title{
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+}
+
+.subtitle{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.select{
+    
+    font-size: 16px;
+    font-weight: normal;
+    float: left;
+    
+}
+
+.can{
+    font-size: 16px;
+    font-weight: normal;
+    float: left;
+    
+    
+}
+
+.donut{
+   width: 100%;
+   position: relative;
+   text-align: center;
+   
+}
+
+.checkbox{
+    width: 27px;
+    height: 27px;
+    background-color: #39b54a;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    position: relative;
+    top: 18px;
+img{
+    position: absolute;
+    top: -4%;
+}
+    
+}
+
+.checkbox-white{
+    position: absolute;
+    left: 50%;
+    top: 48.5%;
+}
+
+.checkbox-text{
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    left: -81px;
+    top: -6px;
+
+}
+
+.checkbox-second{
+    color: #a266c3;
+    font-size: 20px;
+    position: absolute;
+    top: -4px;
+}
+
+.donut-name{
+    display: block;
+    width: 300px;
+    height: 60px;
+    background-color: #ebebeb;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    
+        label{
+        position: relative;
+        left: 25px;
+        top: 20px;
+        color: #403f3f;
+        
+    }
+    
+    input{
+        background-color: #ebebeb;
+        border-style: none;
+        position: relative;
+        left: 35px;
+        top: 20px;
+        width: 80%;
+    }
+    
+}
+
+.donut-price{
+    display: block;
+    width: 300px;
+    height: 60px;
+    background-color: #ebebeb;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    
+    
+        label{
+        position: relative;
+        left: 25px;
+        top: 20px;
+        color: #403f3f;
+        
+    }
+    
+    input{
+        background-color: #ebebeb;
+        border-style: none;
+        position: relative;
+        left: 35px;
+        top: 20px;
+        width: 70%;
+    }
+    
+    img {
+       position: absolute;
+       left: 389px;
+       top: 18px;
+        
+    }
+    
+}
+
+.submit-donut{
+    display: inline-block;
+    width: 95px;
+    height: 60px;
+    background-color: #f26d7d;
+    border-radius: 8px;
+    border-style: none;
+    line-height: 55px;
+    margin: 0 auto;
+    
+    button{
+        color: #ffffff;
+        background-color: transparent;
+        border: none;
+        cursor:pointer;
+        display: block;
+        margin: 0 auto;
+    
+    }
+    
+}
+
+#uniforms-0002-0005, #uniforms-0002-0002{
+    position: absolute;
+    left: 100px;
+}
+
+

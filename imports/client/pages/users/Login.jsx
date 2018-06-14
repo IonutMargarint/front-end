@@ -21,17 +21,23 @@ class Login extends React.Component {
 
     render() {
         return (
-            <main className="cc-main">
+            <main className="login">
                 <AutoForm schema={LoginSchema} onSubmit={this.onSubmit}>
-                    <AutoField name="email"/>
+                    <AutoField className="login-email" name="email"/>
                     <ErrorField name="email"/>
 
-                    <AutoField name="password" type="password"/>
+                    <AutoField className="login-password" name="password" type="password"/>
                     <ErrorField name="password"/>
-
-                    <button type="submit">
-                        Login
-                    </button>
+                    <div className="forgot-password"> <a href="#">Forgot my password!</a>
+                    
+                    <div className="sign-in">
+                        <button type="submit">
+                        Sign in
+                        </button>
+                    </div>
+                    
+                    </div>
+                        
                 </AutoForm>
             </main>
         )

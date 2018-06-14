@@ -1,0 +1,26 @@
+body{
+  background: $body_background;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+ a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+ a:hover{
+      text-decoration: none;
+    }
+
+::placeholder {
+    color: #403f3f;
+    font-family: Gadugi;
+}
+
+::label{
+    color: #403f3f;
+}
+  
+}
+
+

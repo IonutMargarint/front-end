@@ -1,0 +1,141 @@
+.donuts-column {
+    background-color: $body_background;
+}
+
+.donutsc{
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.donut-left {
+    p{
+    font-size: 15px;
+    color: #403f3f;
+    padding-top: 12%;
+}
+
+img{
+    float: left;
+    padding-right: 22px;
+}
+
+span{
+    position: absolute;
+    float: right;
+    color: #959595;
+    right: 17%;
+    top: 56%;
+}
+
+}
+
+.donut-right-pa{
+    color: #246492;
+    font-size: 16px;
+    position: absolute;
+    padding: 13% 55%;
+}
+
+.price-sign-i{
+    position: absolute;
+    width: 6%;
+    right: 18%;
+    padding-top: 19%;
+}
+
+
+
+.donut-right{
+    p{
+        
+        color: #246492;
+        padding-top: 17%;
+        font-size: 16px;
+    }
+}
+
+.price-sign{
+        padding-left: 6%;
+        width: 12%;
+        padding-bottom: 1%;
+}
+
+.edit{
+    padding-left: 46px;
+    width: 31%;
+}
+
+.delete{
+    padding-left: 56px;
+    width: 34%;
+}
+
+
+.white-bg{
+    height: 200px;
+    margin-top: -190px;
+    background-color: $body_background;
+  
+}
+
+.donuts-row{
+    background-color: $body_background;
+}
+
+.donutsr{
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 25px;
+    max-width: 325px;
+    padding-bottom: 15px;
+}
+
+.donutsr-img{
+    padding-top: 25%;
+}
+
+.donutsr-title{
+    font-size: 15px;
+    color: #403f3f;
+}
+
+.donutsr-date{
+    color: #959595;
+    display: block;
+    margin-top: -13px;
+}
+
+.donutsr-price{
+    color: #246492;
+    float: left;
+}
+
+.donutsr-price-sign{
+    float: right;
+    width: 28%;
+    padding-top: 7%;
+}
+
+.donutsrp{
+    left: 4%;
+    padding-top: 8%;
+}
+
+.donutsr-edit-s{
+    position: absolute;
+    display: inline;
+    width: 20%;
+    left: 291%;
+    top: 57%;
+}
+
+.donutsr-delete-s{
+    position: absolute;
+    top: 51%;
+    width: 20%;
+    left: 330%;
+}
+
+

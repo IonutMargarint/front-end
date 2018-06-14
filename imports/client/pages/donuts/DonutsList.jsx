@@ -1,6 +1,7 @@
 import React from 'react';
 import {withTracker} from 'meteor/react-meteor-data';
 import {Donuts} from '/imports/db';
+import DonutsColumn from '../donuts/DonutsColumn.jsx';
 
 class DonutsList extends React.Component {
     constructor() {
@@ -45,7 +46,11 @@ class DonutsList extends React.Component {
                         )
                     })
                 }
-                <a href="" onClick={() => FlowRouter.go('donuts.create')}>Create a donut</a>
+                
+            
+            
+            <DonutsColumn />
+            
             </div>
         )
     }

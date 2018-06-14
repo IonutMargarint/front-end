@@ -1,0 +1,34 @@
+.header {
+    background:$brand_color;
+    padding: $padding 0px;
+    box-shadow: 0 1px 12px -2px rgba(0, 0, 0, 0.8);
+
+
+    .logo{
+        float: left;
+    }
+    .notifications{
+        float: right;
+
+
+        span{
+            position: relative;
+            width: 38px;
+            height: 38px;
+            .counter{
+                position: absolute;
+                right: 0;
+                bottom: -10px;
+                width: 15px;
+                height: 15px;
+                text-align: center;
+                border-radius: 100%;
+                background: #ec145a;
+                color:#FFF;
+                font-weight: bold;
+                font-size: 10px;
+            }
+        }
+    }
+}
+

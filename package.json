@@ -5,6 +5,7 @@
     "start": "meteor run"
   },
   "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.49",
     "babel-runtime": "^6.26.0",
     "bcrypt": "^1.0.3",
     "classnames": "^2.2.5",
@@ -20,7 +21,8 @@
   "devDependencies": {
     "autoprefixer": "^7.1.6",
     "css-mqpacker": "^6.0.1",
-    "postcss-csso": "^3.0.0"
+    "postcss-csso": "^3.0.0",
+    "webpack": "^4.12.0"
   },
   "postcss": {
     "plugins": {
