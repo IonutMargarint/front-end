@@ -1,9 +1,8 @@
-import React, {Component} from 'react';
-import Login from '../users/Login.jsx';
-import Register from '../users/Register.jsx';
+import React from 'react';
+import Login from '../users/Login';
+import Register from '../users/Register';
 
-class Main extends Component {
-    render() {
+export default () => {
         return (
 
         <div className="container">
@@ -62,11 +61,6 @@ class Main extends Component {
     
     </div>
           
-        )
-    }
-}
+        );
+    };
 
-Main.propTypes = {};
-Main.defaultProps = {};
-
-export default Main;

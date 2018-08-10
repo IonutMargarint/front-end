@@ -3,8 +3,8 @@ import {AutoForm, AutoField, ErrorField} from 'uniforms-unstyled';
 import SimpleSchema from 'simpl-schema';
 
 class Login extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
     }
 
     onSubmit = (data) => {
@@ -12,6 +12,7 @@ class Login extends React.Component {
 
         Meteor.loginWithPassword(email, password, (err) => {
             if (!err) {
+                //@ts-ignore
                 FlowRouter.go('donuts');
             } else {
                 alert(err.reason);

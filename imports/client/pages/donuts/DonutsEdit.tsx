@@ -1,10 +1,19 @@
 import React from 'react';
+import {Meteor} from 'meteor/meteor';
 import {AutoForm, AutoField, ErrorField} from 'uniforms-unstyled';
-import DonutsSchema from '/imports/db/donuts/schema';
+import DonutsSchema from '../../../db/donuts/schema';
 
-export default class DonutsEdit extends React.Component {
-    constructor() {
-        super();
+interface IDonutsEditState{
+    donut: any,
+    loading: boolean
+}
+
+export default class DonutsEdit extends React.Component<any, IDonutsEditState> {
+
+    private donutId: any;
+    constructor(props) {
+        super(props);
+        //@ts-ignore
         this.donutId = FlowRouter.current().params._id;
         this.state = {
             donut: null,
@@ -25,6 +34,7 @@ export default class DonutsEdit extends React.Component {
     onSubmit = (data) => {
         Meteor.call('donut.edit', this.donutId, data, (err) => {
             if (!err) {
+                //@ts-ignore
                 FlowRouter.go('donuts.list');
             }
         });

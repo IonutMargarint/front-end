@@ -1,15 +1,16 @@
 import React from 'react';
 import {AutoForm, AutoField, ErrorField} from 'uniforms-unstyled';
-import DonutsSchema from '/imports/db/donuts/schema';
+import DonutsSchema from '../../../db/donuts/schema';
 
 export default class DonutsCreate extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
     }
 
     onSubmit = (data) => {
         Meteor.call('donut.create', data, (err) => {
             if(!err) {
+                //@ts-ignore
                 FlowRouter.go('donuts.list');
             }
         });
@@ -19,7 +20,6 @@ export default class DonutsCreate extends React.Component {
         return (
             
             <main>
-            
                 <div className="col-md-12 add-donut-bg">
                     <div className="container">
                         <div className="row">
@@ -72,15 +72,11 @@ export default class DonutsCreate extends React.Component {
                                
                                </div>
                                
-        
-                       
-                               
-                              
                 <AutoForm schema={DonutsSchema} onSubmit={this.onSubmit}>
                    
                     <div className="col-md-10 col-md-offset-1 donut-name">    
-                        <AutoField name="name"/>
-                        <ErrorField name="name"/>
+                        {/* <AutoField name="name"/>
+                        <ErrorField name="name"/> */}
                     </div>
             
                     <div className="col-md-10 col-md-offset-1 donut-price">

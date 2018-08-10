@@ -1,6 +1,6 @@
 import {Meteor} from 'meteor/meteor';
-import {Donuts} from '/imports/db';
-import Security from '/imports/api/security';
+import {Donuts} from '../../../db';
+import Security from '../../security';
 
 Meteor.methods({
     'donut.create'(data) {

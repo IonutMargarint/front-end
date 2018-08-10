@@ -1,11 +1,11 @@
 import React from 'react';
-import {AutoForm, AutoField, ErrorField} from 'uniforms-unstyled';
+import {AutoForm, AutoField, ErrorField, Accounts} from 'uniforms-unstyled';
 import SimpleSchema from 'simpl-schema';
 
 
 class Register extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
     }
 
@@ -17,6 +17,7 @@ class Register extends React.Component {
             password,
         }, (err) => {
             if (!err) {
+                //@ts-ignore
                 FlowRouter.go('donuts.list');
             }
             else {

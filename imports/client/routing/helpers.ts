@@ -29,8 +29,9 @@ let PageToTopOnRouteChange = () => {
 let removeMobileMenuClass = () => {
     document.body.classList.remove('cc-menu-open');
 };
-
+//@ts-ignore
 FlowRouter.triggers.enter([addPageClass, PageToTopOnRouteChange]);
+//@ts-ignore
 FlowRouter.triggers.exit([removePageClass, removeMobileMenuClass]);
 
 
@@ -54,7 +55,7 @@ let isCurrentRoute = (route) => {
 let isCurrentSubmenuRoute = (routes) => {
     return routes.containsByProp('name', router.current().route.name);
 };
-
+//@ts-ignore
 export default FlowHelpers = {
     isCurrentRoute,
     isCurrentSubmenuRoute

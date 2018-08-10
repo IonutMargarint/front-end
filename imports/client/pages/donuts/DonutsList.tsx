@@ -1,11 +1,24 @@
 import React from 'react';
+//@ts-ignore
 import {withTracker} from 'meteor/react-meteor-data';
-import {Donuts} from '/imports/db';
-import DonutsColumn from '../donuts/DonutsColumn.jsx';
+import {Donuts} from '../../../db';
+import DonutsColumn from './DonutsColumn';
 
-class DonutsList extends React.Component {
-    constructor() {
-        super();
+interface IDonuts{
+    _id: number;
+    name: string;
+    price: number;
+    isComestible: boolean;
+}
+
+interface IDonutsListState{
+    isLoading: boolean,
+    donuts: IDonuts[]
+}
+
+class DonutsList extends React.Component<any, IDonutsListState> {
+    constructor(props) {
+        super(props);
         this.removeDonut = this.removeDonut.bind(this);
         this.editDonut = this.editDonut.bind(this);
     }
@@ -15,6 +28,7 @@ class DonutsList extends React.Component {
     };
 
     editDonut = (_id) => {
+        //@ts-ignore
         FlowRouter.go('donuts.edit', {_id: _id});
     };
 
@@ -31,6 +45,7 @@ class DonutsList extends React.Component {
 
         return (
             <div>
+                
                 {
                     donuts.map(donut => {
                         return (
